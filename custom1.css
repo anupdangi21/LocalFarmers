@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     margin: 0;
@@ -9,7 +10,7 @@
     background-image: url(images/background.jpg);
  }
 nav{
-    background: #222222;
+    background: #1c4301;
     padding: 10px 40px 10px 70px;
     border: 1px solid #000;
     border-left: none;
@@ -258,8 +259,8 @@ nav ul .searchicon .icon{
 
 .photos{
     width: 40%;
-    margin-top: 10px;
-    margin-left: 10px;
+    margin-top: 80px;
+    margin-left: 30px;
     height: 380px;
     display: flex;
     gap: 5px;
@@ -276,5 +277,13 @@ nav ul .searchicon .icon{
 }
 
 .photos img:hover{
-    width: 100%;
+    width: 70%;
+}
+
+.info h1{
+    margin-left: 770px;
+    margin-top: -390px;
+    color: black;
+    font-weight: 550;
+    font-family: "Tilt Neon", sans-serif;
 }
