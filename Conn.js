@@ -50,12 +50,16 @@ app.post('/submit', async function(req, res) {
         if (username && password) {
             const user = await LoginData.findOne({ username, password }).exec();
             const admin = await admins.findOne({username, password}).exec();
+            const register = await RegisterLoginData.findOne({username, password}).exec();
             if (user) {
-                console.log("Login successful");
+                // console.log("Login successful");
                 return res.redirect("/customer/afterlogin.html"); // Redirect if user is regular customer
             } else if (admin) { 
-                console.log("admin dashboard");
+                // console.log("admin dashboard");
                 return res.redirect("./admin/admin.html"); //Redirect to admin dasboard if user is admin
+            } else if (register){
+                // console.log("login successful");
+                return res.redirect("/customer/afterlogin.html");
             }
         } 
         if (name && email && username && password) {   //this condition saves the newly registered data of the customers in the db
