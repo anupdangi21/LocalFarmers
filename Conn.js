@@ -74,7 +74,8 @@ app.post('/submit', async function(req, res) {
             return res.redirect("/customer.html");
         } 
         // Invalid form submission
-        res.status(400).send('Invalid form submission');
+        console.log("please register first")
+        res.redirect("/customer/register.html")
     } catch (error) {
         console.error('Error:', error);
         res.status(500).send('Internal server error');

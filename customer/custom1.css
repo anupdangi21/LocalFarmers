@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     margin: 0;
@@ -257,7 +258,7 @@ nav ul .searchicon .icon{
   }
 
 .photos{
-    width: 50%;
+    width: 40%;
     margin-top: 80px;
     margin-left: 30px;
     height: 380px;
@@ -276,5 +277,13 @@ nav ul .searchicon .icon{
 }
 
 .photos img:hover{
-    width: 100%;
+    width: 70%;
+}
+
+.info h1{
+    margin-left: 800px;
+    margin-top: -300px;
+    color: black;
+    font-weight: 550;
+    font-family: "Tilt Neon", sans-serif;
 }
