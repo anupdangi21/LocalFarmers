@@ -9,3 +9,5 @@ function logout(event) {
 
 // Attach click event listener to the logout link
 document.getElementById('log-out').addEventListener('click', logout);
+
+//js code for the dark mode and light mode
