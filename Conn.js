@@ -60,6 +60,9 @@ app.post('/submit', async function(req, res) {
             } else if (register){
                 // console.log("login successful");
                 return res.redirect("/customer/afterlogin.html");
+            }else {
+                // If username or password is missing, send an error response
+                res.status(400).send('Missing username or password');
             }
         } 
         if (name && email && username && password) {   //this condition saves the newly registered data of the customers in the db
@@ -102,4 +105,4 @@ app.get('/about ', (req, res) => {
 
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
+app.listen(PORT, () => console.log(`Server is running on port http://localhost:${PORT}`));
