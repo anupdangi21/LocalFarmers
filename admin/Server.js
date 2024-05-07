@@ -1,42 +1,13 @@
-// const express = require('express');
-// const app = express();
-// const bodyParser = require('body-parser');
-// const mongoose = require('mongoose');
+// Function to handle logout
+function logout(event) {
+    event.preventDefault(); // Prevent the default behavior of the link
+    if (window.confirm("Are you sure you want to exit?")) {
+        // Redirect to /customer/customer.html
+        window.location.href = '/customer/customer.html';
+    }
+}
 
-// // Parse application/x-www-form-urlencoded
-// app.use(bodyParser.urlencoded({ extended: true }));
+// Attach click event listener to the logout link
+document.getElementById('log-out').addEventListener('click', logout);
 
-// mongoose.connect("mongodb+srv://anupdangi28:Anup987%40654%40321@farmerapp.wvtyycy.mongodb.net/FarmerApp");
- 
-// // Creating the data schema
-// const notesSchema = {
-//     username: String,
-//     password: String
-// };
-// const Note = mongoose.model("Note", notesSchema);
-
-// // Serving the HTML file
-// app.get("/customer/signin.html", function(req, res){
-//     res.sendFile(__dirname + '/signin.html');   
-// });
-
-// // Handling form submission
-// app.post("/", function(req, res){
-//     let newNote = new Note({
-//         username: req.body.username,
-//         password: req.body.password
-//     });
-//     newNote.save()
-//         .then(() => {
-//             res.send('Data saved successfully');
-//         })
-//         .catch((err) => {
-//             res.status(500).send('Error saving data: ' + err);
-//         });
-// });
-
-// // Start the server
-// const port = 5501;
-// app.listen(port, () => {
-//     console.log(`Server is running on port ${port}`);
-// });
+//js code for the dark mode and light mode

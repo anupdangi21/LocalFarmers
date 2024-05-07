@@ -27,13 +27,13 @@
                         <span class="material-symbols-sharp">nature_people</span>
                         <h3>Farmers</h3>
                     </a>
-                    <a href="">
-                        <span class="material-symbols-sharp">settings</span>
-                        <h3>settings</h3>
-                    </a>
-                    <a href="Approvals.html">
+                    <a href="approval.html">
                         <span class="material-symbols-sharp">approval_delegation</span>
                          <h3>Approvals</h3>
+                    </a>
+                    <a href="settings.html">
+                        <span class="material-symbols-sharp">settings</span>
+                        <h3>settings</h3>
                     </a>
                     <a href="#" id="log-out">
                         <span class="material-symbols-sharp">logout</span>
@@ -110,7 +110,7 @@
                     </div>
                     <!-- div for recent_orders -->
                     <div class="Recent_order">
-                        <h1>Recent Orders</h1>
+                        <h1>Recent Orders</h1> 
                         <table>
                             <thead>
                                 <tr>
@@ -206,18 +206,6 @@
                 <!--Sale analytics started here  -->
             </div>
         </div>   
-<!-- <script type="text/javascript" src="Server.js"> </script>    -->
-<script>
-    // Function to handle logout
-    function logout(event) {
-        event.preventDefault(); // Prevent the default behavior of the link
-        window.confirm("Are you sure you want to exit");
-        // Redirect to /customer/customer.html
-        window.location.href = '/customer/customer.html';
-    }
-
-    // Attach click event listener to the logout link
-    document.getElementById('log-out').addEventListener('click', logout);
-</script>
+ <script src="Server.js"></script>
 </body>
 </html>
